@@ -48,6 +48,7 @@
 	yazi
 	fastfetch
 	firefox
+	prismlauncher
 	vesktop
 	vscodium
 	javaPackages.compiler.temurin-bin.jdk-25
