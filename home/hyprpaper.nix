@@ -4,8 +4,7 @@
 
     settings = {
       splash = false;
-  
-    settings = {
+
       preload = [
         "/home/rex/Pictures/Wallpapers/mountain.jpg"
       ];
