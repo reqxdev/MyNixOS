@@ -52,8 +52,12 @@
 	vesktop
 	vscodium
 	javaPackages.compiler.temurin-bin.jdk-25
-	nerd-fonts.jetbrains-mono
    ];
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
+
 
   programs.fish.enable = true;
   programs.firefox.enable = true;

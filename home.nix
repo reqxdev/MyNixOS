@@ -15,6 +15,15 @@
     };
   };
 
+  programs.kitty = {
+    enable = true;
+
+    font = {
+      name = "JetBrainsMono Nerd Font";
+      size = 11;
+    };
+  };
+
   gtk = {
     enable = true;
 
