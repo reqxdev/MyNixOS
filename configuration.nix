@@ -13,6 +13,13 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+
+  hardware.enableRedistributableFirmware = true;
+
   networking.hostName = "MyNix";
   networking.networkmanager.enable = true;
 
@@ -48,6 +55,7 @@
 	yazi
 	fastfetch
 	firefox
+	obs-studio
 	prismlauncher
 	vesktop
 	vscodium
