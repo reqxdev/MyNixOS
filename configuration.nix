@@ -57,6 +57,7 @@
 	firefox
 	obs-studio
 	prismlauncher
+	wl-clipboard
 	vesktop
 	vscodium
 	javaPackages.compiler.temurin-bin.jdk-25
