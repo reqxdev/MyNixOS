@@ -6,13 +6,14 @@
   home.stateVersion = "26.05";
 
   imports = [
-    ./home/fish.nix
-    ./home/kitty.nix
-    ./home/yazi.nix
-    ./home/waybar.nix
-    ./home/hyprpaper.nix
-    ./home/hyprshot.nix
-    ./home/fonts.nix
-    ./home/gtk.nix
+	./home/fish.nix
+	./home/kitty.nix
+	./home/yazi.nix
+	./home/waybar.nix
+	./home/hyprpaper.nix
+	./home/hyprshot.nix
+	./home/hyprlock.nix
+	./home/fonts.nix
+	./home/gtk.nix
   ];
 }
