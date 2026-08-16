@@ -13,6 +13,7 @@
 	./home/hyprpaper.nix
 	./home/hyprshot.nix
 	./home/hyprlock.nix
+	.home/rofi.nix
 	./home/wlogout.nix	
 	./home/fonts.nix
 	./home/gtk.nix
