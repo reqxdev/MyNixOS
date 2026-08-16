@@ -32,19 +32,36 @@
         }
       ];
 
-      # Put the label list from the previous configuration here.
       label = [
+        # Time: 15:42
         {
           monitor = "";
-          text = ''
-            cmd[update:1000] echo "<b><big>$(date +'%H')</big></b>"
-          '';
+          text = "$TIME";
           color = "$accent";
           font_size = 112;
           font_family = "JetBrainsMono Nerd Font";
+
           shadow_passes = 3;
           shadow_size = 4;
-          position = "0, 220";
+
+          position = "0, 60";
+          halign = "center";
+          valign = "center";
+        }
+
+        # Date: Sunday 16 August
+        {
+          monitor = "";
+          text =
+            "cmd[update:60000] ${pkgs.coreutils}/bin/date '+%A %d %B'";
+          color = "$text";
+          font_size = 24;
+          font_family = "JetBrainsMono Nerd Font";
+
+          shadow_passes = 2;
+          shadow_size = 3;
+
+          position = "0, -40";
           halign = "center";
           valign = "center";
         }
@@ -76,9 +93,3 @@
       ];
     };
   };
-
-  home.packages = with pkgs; [
-    curl
-    playerctl
-  ];
-}
