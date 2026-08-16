@@ -34,16 +34,9 @@
      ];
    };
 
+  services.getty.autologinUser = "rex";
+
   security.pam.services.hyprlock = {};
-
-  programs.regreet = {
-    enable = true;
-
-    font = {
-      name = "JetBrainsMono Nerd Font";
-      size = 12;
-    };
-  };
 
   programs.hyprland = {
     enable = true;
