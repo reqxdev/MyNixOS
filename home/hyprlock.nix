@@ -66,7 +66,7 @@
           inner_color = "rgba(30, 30, 46, 0.85)";
           font_color = "$text";
 
-          fade_on_empty = true;
+          fade_on_empty = false;
           placeholder_text = "<i>Password...</i>";
 
           position = "0, 120";
