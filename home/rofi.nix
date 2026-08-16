@@ -150,7 +150,7 @@ in
       click-to-exit = true;
     };
 
-    theme = glassTheme;
+    theme = "${glassTheme}";
   };
 
   home.packages = with pkgs; [
