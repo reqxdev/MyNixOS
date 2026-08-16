@@ -11,6 +11,7 @@
     ./home/yazi.nix
     ./home/waybar.nix
     ./home/hyprpaper.nix
+    ./home/hyprshot.nix
     ./home/fonts.nix
     ./home/gtk.nix
   ];

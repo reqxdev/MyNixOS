@@ -48,8 +48,9 @@
 	kitty
 	git
 	gh
-	hyprpaper
 	hyprlock
+	hyprpaper
+	hyprshot
 	waybar
 	rofi
 	yazi
