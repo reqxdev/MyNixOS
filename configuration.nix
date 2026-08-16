@@ -34,6 +34,8 @@
      ];
    };
 
+  security.pam.services.hyprlock = {};
+
   services.getty.autologinUser = "rex";
   
   programs.hyprland = {
