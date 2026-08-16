@@ -1,4 +1,4 @@
-k{ pkgs, ... }:
+{ pkgs, ... }:
 
 let
   whiteWlogoutIcons = pkgs.runCommand "wlogout-white-icons" {
