@@ -19,6 +19,7 @@
       background = [
         {
           monitor = "";
+          path = "/home/rex/Pictures/Wallpapers/mountain.jpg";
           color = "$background";
 
           blur_size = 4;
@@ -66,30 +67,41 @@
         }
       ];
 
-      "input-field" = [
-        {
-          monitor = "";
-          size = "250, 50";
-          outline_thickness = 3;
+"input-field" = [
+  {
+    monitor = "";
+    size = "320, 58";
+    outline_thickness = 1;
 
-          dots_size = 0.26;
-          dots_spacing = 0.64;
-          dots_center = true;
-          dots_rounding = -1;
+    dots_size = 0.22;
+    dots_spacing = 0.30;
+    dots_center = true;
+    dots_rounding = -1;
 
-          rounding = 22;
-          outer_color = "$surface";
-          inner_color = "rgba(30, 30, 46, 0.85)";
-          font_color = "$text";
+    rounding = 18;
 
-          fade_on_empty = false;
-          placeholder_text = "<i>Password...</i>";
+    # Translucent glass
+    inner_color = "rgba(30, 30, 46, 0.32)";
+    outer_color = "rgba(255, 255, 255, 0.28)";
+    font_color = "$text";
 
-          position = "0, 120";
-          halign = "center";
-          valign = "bottom";
-        }
-      ];
+    check_color = "rgba(255, 255, 255, 0.40)";
+    fail_color = "rgba(243, 139, 168, 0.80)";
+
+    # Soft glass shadow
+    shadow_passes = 4;
+    shadow_size = 8;
+    shadow_color = "rgba(0, 0, 0, 0.40)";
+    shadow_boost = 1.2;
+
+    fade_on_empty = false;
+    placeholder_text = "<i>Password...</i>";
+
+    position = "0, 120";
+    halign = "center";
+    valign = "bottom";
+  }
+];
     };
   };
 }
