@@ -19,7 +19,6 @@
       background = [
         {
           monitor = "";
-          path = "screenshot";
           color = "$background";
 
           blur_size = 4;
