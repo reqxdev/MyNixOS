@@ -56,6 +56,7 @@
 	rofi
 	yazi
 	fastfetch
+	clock-rs
 	firefox
 	obs-studio
 	prismlauncher
