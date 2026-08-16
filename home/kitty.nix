@@ -10,10 +10,10 @@
     };
 
     settings = {
-      background = "#0b1018";
-      foreground = "#cdd6f4";
+      background = "#101010";
+      foreground = "#e6e6e6";
 
-      background_opacity = "0.76";
+      background_opacity = "0.82";
       dynamic_background_opacity = "yes";
 
       window_padding_width = 14;
