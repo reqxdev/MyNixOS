@@ -36,13 +36,19 @@
 
   security.pam.services.hyprlock = {};
 
-  services.getty.autologinUser = "rex";
-  
+  programs.regreet = {
+    enable = true;
+
+    font = {
+      name = "JetBrainsMono Nerd Font";
+      size = 12;
+    };
+  };
+
   programs.hyprland = {
-  	enable = true;
-	xwayland.enable = true;
-	withUWSM = true;
-        
+    enable = true;
+    xwayland.enable = true;
+    withUWSM = true;
   };
 
    environment.systemPackages = with pkgs; [
