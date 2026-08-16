@@ -1,4 +1,22 @@
-{ pkgs, ... }:
+k{ pkgs, ... }:
+
+let
+  whiteWlogoutIcons = pkgs.runCommand "wlogout-white-icons" {
+    nativeBuildInputs = [ pkgs.imagemagick ];
+  } ''
+    mkdir -p "$out"
+
+    for icon in lock suspend reboot shutdown; do
+      magick \
+        "${pkgs.wlogout}/share/wlogout/icons/$icon.png" \
+        -channel RGB \
+        -fill white \
+        -colorize 100 \
+        +channel \
+        "$out/$icon.png"
+    done
+  '';
+in
 
 {
   programs.wlogout = {
@@ -12,15 +30,9 @@
         keybind = "l";
       }
       {
-        label = "logout";
-        action = "uwsm stop";
-        text = "Logout  [E]";
-        keybind = "e";
-      }
-      {
         label = "suspend";
         action = "hyprlock & sleep 1; systemctl suspend";
-        text = "Suspend  [S]";
+        text = "Sleep  [S]";
         keybind = "s";
       }
       {
@@ -91,28 +103,23 @@
 
       #lock {
         background-image:
-          image(url("${pkgs.wlogout}/share/wlogout/icons/lock.png"));
-      }
-
-      #logout {
-        background-image:
-          image(url("${pkgs.wlogout}/share/wlogout/icons/logout.png"));
+          image(url("${whiteWlogoutIcons}/lock.png"));
       }
 
       #suspend {
         background-image:
-          image(url("${pkgs.wlogout}/share/wlogout/icons/suspend.png"));
+          image(url("${whiteWlogoutIcons}/suspend.png"));
       }
 
       #reboot {
         background-image:
-          image(url("${pkgs.wlogout}/share/wlogout/icons/reboot.png"));
+          image(url("${whiteWlogoutIcons}/reboot.png"));
       }
 
       #shutdown {
         background-image:
-          image(url("${pkgs.wlogout}/share/wlogout/icons/shutdown.png"));
+          image(url("${whiteWlogoutIcons}/shutdown.png"));
       }
     '';
   };
-}
+}	
