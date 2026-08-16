@@ -56,6 +56,10 @@ let
     prompt {
         background-color: transparent;
         text-color:       @foreground-muted;
+
+        expand:           false;
+        padding:          0px 6px 0px 2px;
+        margin:           0px;
     }
 
     entry {
@@ -140,8 +144,9 @@ in
       show-icons = true;
       icon-theme = "Papirus-Dark";
 
-      display-drun = "";
-      display-run = "";
+      # Keep the trailing spaces to prevent the icon being clipped.
+      display-drun = "󰍉  ";
+      display-run = "󰍉  ";
 
       drun-display-format = "{name}";
 
