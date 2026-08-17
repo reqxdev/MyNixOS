@@ -17,6 +17,7 @@
 	./home/rofi.nix
 	./home/spotify-player.nix
 	./home/clock-rs.nix	
+	./home/udiskie.nix
 	./home/fonts.nix
 	./home/gtk.nix
   ];

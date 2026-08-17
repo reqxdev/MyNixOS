@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ unstablePkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    spotify-player
+  home.packages = [
+    unstablePkgs.spotify-player
   ];
 }

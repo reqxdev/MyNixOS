@@ -35,7 +35,7 @@
    };
 
   services.getty.autologinUser = "rex";
-
+  services.udisks2.enable = true;
   security.pam.services.hyprlock = {};
 
   programs.hyprland = {
