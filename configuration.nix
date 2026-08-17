@@ -53,14 +53,16 @@
 	hyprpaper
 	hyprshot
 	waybar
+	cava
 	rofi
 	yazi
 	fastfetch
 	clock-rs
+	wl-clipboard
 	firefox
 	obs-studio
 	prismlauncher
-	wl-clipboard
+	spotify-player
 	vesktop
 	vscodium
 	javaPackages.compiler.temurin-bin.jdk-25

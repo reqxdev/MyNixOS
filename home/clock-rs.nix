@@ -21,8 +21,8 @@
 
       date = {
         fmt = "%A, %B %d, %Y";
-        use_12h = true;
-        utc = true;
+        use_12h = false;
+        utc = false;
         hide_seconds = true;
       };
     };
