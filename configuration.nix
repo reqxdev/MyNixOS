@@ -56,6 +56,7 @@
 	cava
 	rofi
 	yazi
+	kdePackages.dolphin
 	fastfetch
 	clock-rs
 	wl-clipboard
