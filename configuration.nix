@@ -44,11 +44,14 @@
     withUWSM = true;
   };
 
+   nixpkgs.config.allowUnfree = true;
+
    environment.systemPackages = with pkgs; [
 	fish
 	kitty
 	git
 	gh
+	codex
 	hyprlock
 	hyprpaper
 	hyprshot
@@ -66,6 +69,7 @@
 	spotify-player
 	vesktop
 	vscodium
+	jetbrains.idea
 	javaPackages.compiler.temurin-bin.jdk-25
    ];
 
