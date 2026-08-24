@@ -16,6 +16,7 @@
 	./home/wlogout.nix	
 	./home/rofi.nix
 	./home/spotify-player.nix
+	./home/default-apps.nix
 	./home/clock-rs.nix	
 	./home/udiskie.nix
 	./home/fonts.nix

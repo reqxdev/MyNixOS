@@ -44,45 +44,42 @@
     withUWSM = true;
   };
 
-   nixpkgs.config.allowUnfree = true;
+  programs.fish.enable = true;
 
-   environment.systemPackages = with pkgs; [
+  nixpkgs.config.allowUnfree = true;
+
+  environment.systemPackages = with pkgs; [
 	fish
 	kitty
 	git
 	gh
-	codex
+	zip
+	unzip
 	hyprlock
 	hyprpaper
 	hyprshot
 	waybar
-	cava
 	rofi
 	yazi
-	kdePackages.dolphin
-	fastfetch
-	clock-rs
+	thunar
 	wl-clipboard
+	fastfetch
 	firefox
+	spotify
+	vesktop
 	obs-studio
 	prismlauncher
-	spotify-player
-	vesktop
-	vscodium
+	codex
+	vscode
 	jetbrains.idea
 	javaPackages.compiler.temurin-bin.jdk-25
-   ];
+	nodejs
+  ];
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
   ];
 
-
-  programs.fish.enable = true;
-  programs.firefox.enable = true;
-
-  
   system.stateVersion = "26.05";
 
 }
-
